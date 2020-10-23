@@ -1,3 +1,4 @@
+import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
 import '../styles/globals.css'
@@ -16,7 +17,7 @@ const theme = {
   },
 }
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
     <>
       <GlobalStyle />
@@ -26,5 +27,3 @@ function MyApp({ Component, pageProps }) {
     </>
   )
 }
-
-export default MyApp
