@@ -1,15 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders homepage unchanged 1`] = `
-<div
-  className="container"
->
-  <main
-    className="main"
-  >
-    <h1
-      className="title"
-    >
+<div>
+  <main>
+    <h1>
       Welcome to 
       <a
         href="https://nextjs.org"
@@ -17,22 +11,15 @@ exports[`renders homepage unchanged 1`] = `
         Next.js!
       </a>
     </h1>
-    <p
-      className="description"
-    >
+    <p>
       Get started by editing
        
-      <code
-        className="code"
-      >
+      <code>
         pages/index.js
       </code>
     </p>
-    <div
-      className="grid"
-    >
+    <div>
       <a
-        className="card"
         href="https://nextjs.org/docs"
       >
         <h3>
@@ -43,7 +30,6 @@ exports[`renders homepage unchanged 1`] = `
         </p>
       </a>
       <a
-        className="card"
         href="https://nextjs.org/learn"
       >
         <h3>
@@ -54,7 +40,6 @@ exports[`renders homepage unchanged 1`] = `
         </p>
       </a>
       <a
-        className="card"
         href="https://github.com/vercel/next.js/tree/master/examples"
       >
         <h3>
@@ -65,7 +50,6 @@ exports[`renders homepage unchanged 1`] = `
         </p>
       </a>
       <a
-        className="card"
         href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
       >
         <h3>
@@ -77,9 +61,7 @@ exports[`renders homepage unchanged 1`] = `
       </a>
     </div>
   </main>
-  <footer
-    className="footer"
-  >
+  <footer>
     <a
       href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
       rel="noopener noreferrer"
@@ -89,7 +71,6 @@ exports[`renders homepage unchanged 1`] = `
        
       <img
         alt="Vercel Logo"
-        className="logo"
         src="/vercel.svg"
       />
     </a>
