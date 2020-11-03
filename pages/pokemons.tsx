@@ -1,4 +1,4 @@
-import PokemonsBrowser from "components/PokemonsBrowser";
+import PokemonsBrowser from 'components/PokemonsBrowser'
 
 export default function PokemonsPage() {
   return <PokemonsBrowser />
