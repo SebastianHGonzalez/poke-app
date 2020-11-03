@@ -1,12 +1,32 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
-import '../styles/globals.css'
+import Footer from 'components/common/Footer'
+import Header from 'components/common/Header'
+import Main from 'components/common/Main'
 
 const GlobalStyle = createGlobalStyle`
+  html,
   body {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
+  #__next {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
     box-sizing: border-box;
   }
 `
@@ -22,7 +42,11 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <Header />
+        <Main>
+          <Component {...pageProps} />
+        </Main>
+        <Footer />
       </ThemeProvider>
     </>
   )
