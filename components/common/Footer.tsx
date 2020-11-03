@@ -1,14 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-const FooterWrapper = styled.footer`
-
-`;
+const FooterWrapper = styled.footer``
 
 export default function Footer(): JSX.Element {
-  return (
-    <FooterWrapper>
-      Footer
-    </FooterWrapper>
-  );
+  return <FooterWrapper>Footer</FooterWrapper>
 }

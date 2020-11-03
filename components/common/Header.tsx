@@ -1,12 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-const HeaderWrapper = styled.header``;
+const HeaderWrapper = styled.header``
 
 export default function Header(): JSX.Element {
-  return (
-    <HeaderWrapper>
-      Header
-    </HeaderWrapper>
-  );
+  return <HeaderWrapper>Header</HeaderWrapper>
 }
